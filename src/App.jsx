@@ -95,7 +95,14 @@ class Conversation extends React.Component {
               //==============================
               // 7/ PUBLISH LOCAL STREAM
               //==============================
-              conversation.publish(localStream);
+              conversation
+                .publish(localStream)
+                .then((stream) => {
+                  console.log("published", stream);
+                })
+                .catch((err) => {
+                  console.error("publish error", err);
+                });
             }).catch((err) => {
               console.error('Conversation join error', err);
             });
@@ -114,7 +121,7 @@ class Conversation extends React.Component {
         {!hasConversation ?
           <form onSubmit={this.getOrCreateConversation} >
             <input type="text" placeholder="abcd" value={this.state.name} onChange={this.handleNameChange} /> &nbsp;
-        <button type="submit" title="Get Or Create Conversation">GetOrCreateConversation</button>
+            <button type="submit" title="Get Or Create Conversation">GetOrCreateConversation</button>
           </form>
           :
           <div>
@@ -135,7 +142,7 @@ function App() {
       {/* Modified content to : */}
       <p>
         <img alt="ApiRTC logo" src={process.env.PUBLIC_URL + '/ApiRTC.png'} width="66" height="76" />&nbsp;&&nbsp;
-          <img alt="React logo" src={process.env.PUBLIC_URL + '/logo192.png'} width="76" height="76" />
+        <img alt="React logo" src={process.env.PUBLIC_URL + '/logo192.png'} width="76" height="76" />
       </p>
       <Conversation></Conversation>
     </div>
