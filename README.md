@@ -65,11 +65,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-in package.json, set "homepage" : "/apirtc-react"
+in package.json, set "homepage" : "https://apirtc.github.io/apirtc-react"
 
 nm run build
 rm -rf docs
 cp -r build docs
+git add docs/*
 git status
 git commit -a -m "deploy"
 git push
