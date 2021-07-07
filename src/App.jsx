@@ -1,13 +1,9 @@
 import './App.css';
 
-// ADDED
 import React from 'react';
 
-//import apiRTC from '@apizee/apirtc';
-// or 
 import { UserAgent } from '@apizee/apirtc';
 
-// ADDED
 class Conversation extends React.Component {
 
   constructor(props) {
@@ -139,7 +135,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* Modified content to : */}
       <p>
         <img alt="ApiRTC logo" src={process.env.PUBLIC_URL + '/ApiRTC.png'} width="66" height="76" />&nbsp;&&nbsp;
         <img alt="React logo" src={process.env.PUBLIC_URL + '/logo192.png'} width="76" height="76" />
