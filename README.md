@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# ApiRTC over React JS
+
+This project is a very simple **WebRTC** application developped in **ReactJS** and using **ApiRTC**. 
+
+It is running **live** hosted on github.io : https://apirtc.github.io/apirtc-react/.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
