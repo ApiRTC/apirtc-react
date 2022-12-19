@@ -2,7 +2,7 @@ import './App.css';
 
 import React from 'react';
 
-import { UserAgent } from '@apizee/apirtc';
+import { UserAgent } from '@apirtc/apirtc';
 
 class Conversation extends React.Component {
 
