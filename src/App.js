@@ -1,7 +1,7 @@
-
-import './App.css';
-import React from "react"
 import ConversationComponent from "./Components/ConversationComponent"
+
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
